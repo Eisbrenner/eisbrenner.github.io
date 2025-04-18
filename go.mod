@@ -1,4 +1,4 @@
-module github.com/chrede88/qubtTemplate
+module github.com/Eisbrenner/eisbrenner.github.io
 
 go 1.24.2
 
