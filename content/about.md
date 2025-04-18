@@ -3,10 +3,9 @@
 type: misc
 
 # change these
-jobTitle: Blogger
-name: Eisbrenner
+jobTitle: Data Scientist
+name: Ezra Eisbrenner
 bio: true
 icon: ":coffee:"
 ---
-
-Add your Bio here!:+1:
+Hi! I am a data scientist working with spatio-temporal data and bayesian models.
