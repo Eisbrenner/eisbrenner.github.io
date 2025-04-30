@@ -5,7 +5,7 @@
 author:
   name: Ezra Eisbrenner
   image: author.png
-  greeting: "Data Scientist 🫩"
+  greeting: "Data Scientist :coffee:"
   icon: ":wave:"
 
 ############################
@@ -17,20 +17,20 @@ links:
   - github: https://github.com/Eisbrenner
   - mastodon: https://vis.social/@ezra_eisbrenner
   - orcid: https://orcid.org/0000-0002-4042-6087
+  # - email: mailto:public@email.com
   # - link:
   # - website:
-  # - x-twitter:
-  # - mastodon:
-  # - instagram:
-  # - reddit:
+  # - bluesky:
   # - telegram:
   # - whatsapp:
   # - signal:
-  # - codepen:
-  # - dev:
-  # - email:
   # - discord:
   # - slack:
+  # - reddit:
+  # - instagram:
+  # - x-twitter:
+  # - codepen:
+  # - dev:
   # - stack-overflow:
   # - twitch:
   # - patreon:
@@ -44,7 +44,6 @@ links:
   # - tumblr:
   # - kickstarter:
   # - snapchat:
-  # - bluesky:
   # - bitbucket:
   # - bandcamp:
   # - etsy:
