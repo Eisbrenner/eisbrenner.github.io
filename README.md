@@ -2,6 +2,12 @@
 
 Please follow the instructions below to finish the setup of your new Qubt site.
 
+## Local testing
+
+```bash
+hugo server -D --baseURL=http://localhost/
+```
+
 ## Installation
 
 1) Add a LICENSE to your repo.
