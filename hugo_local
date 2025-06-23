@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+if [[ "$1" == "draft" ]]; then
+  hugo server -D --baseURL=http://localhost/
+else
+  hugo server --baseURL=http://localhost/
+fi
