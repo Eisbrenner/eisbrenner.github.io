@@ -17,7 +17,7 @@ authors:
 + Press *Use this template* on [qubtTemplate](https://github.com/chrede88/qubtTemplate) and create a new repository named `your_username.github.io`
 + Set up GitHub Actions workflows for the new repository
 + Set your full domain address as the base URL `baseURL=https://your_username.github.io` in `config/_default/hugo.yaml`
-+ Make the changes you want, push them, and publish
++ Make the changes you want, push them, and publish on [GitHub Pages](https://pages.github.com/)
 
 ---
 
@@ -53,13 +53,13 @@ You should be sent over to your new repo after a bit. Once you arrive in your ne
 
 (1) The `go.mod` file was prepared for me by the *repository template* (possibly an update to the *repository template* that didn't extend to the readme).
 
-(2) In `config/_default/hugo.yaml` set the base URL to your GitHub Page
+(2) In `config/_default/hugo.yaml` set the base URL to your GitHub page
 
 ```yaml
 baseURL=https://your_username.github.io
 ```
 
-this is a requirement for the GitHub action used for publishing to work as intended.
+this is a requirement for the [GitHub Action](https://github.com/features/actions), we use later for publishing, to work as intended.
 
 (3) *Maybe not required anymore:* At one point I had an issue while running a local server, because of the non-default base URL. I had to run
 
@@ -73,11 +73,11 @@ Now, you are all set to modify your website after your heart's content, how to p
 
 ## GitHub Pages for hosting
 
-I'll now assume you named your repository as previously told, `your_username.github.io`, like mine is `eisbrenner.github.io`. This naming convention has been, and probably still is, a requirement of GitHub Pages. Note, what I write here next is also covered by the readme under ***Deploy on GitHub Pages***.
+I'll now assume you named your repository as previously told, `your_username.github.io`, like mine is `eisbrenner.github.io`. This naming convention has been, and probably still is, a requirement of [GitHub Pages](https://pages.github.com/). Note, what I write here next is also covered by the readme under ***Deploy on GitHub Pages***.
 
 At this point, if you push your changes to GitHub, and both repo name and base URL are setup properly, your README will be hosted under your GitHub Pages URL. Anyway, that is not what we're after!
 
-So, now we simply rename the directory which currently holds our rules for the deployment action (action being a GitHub term for some code execution). For example, from the root directory of your newly created repository you can run in the terminal
+So, now we simply rename the directory which currently holds our rules for the deployment [action](https://github.com/features/actions) (action being a GitHub term for some code execution). For example, from the root directory of your newly created repository you can run in the terminal
 
 ```bash
 mv .github/deploymentWorkflow .github/workflows
@@ -95,7 +95,9 @@ Finally, one last thing to fix, then we're done! Back to GitHub, since this rela
 
 ![Screenshot of the option to build and deploy using a GitHub Action instead of from a branch](build_and_deploy.png)
 
-Instead of **Deploy from a branch** we want to use **GitHub Actions**, so select that in the drop down menu from the button below *Source* under *Build and deployment*. Now the GitHub Action, as defined in our `.github/workflows/buildDeploy.yaml` tells us how publishing is handled. By default it should build and deploy each time we commit a new release or whenever we manually run our GitHub Action under the ***Actions*** header. The automatic part does not work for me yet, something is off with the rules for github pages under settings -- environments. Well, manually triggering the build and deploy action is fine for now.
+Instead of **Deploy from a branch** we want to use **GitHub Actions**, so select that in the drop down menu from the button below *Source* under *Build and deployment*. Now the GitHub Action, as defined in our `.github/workflows/buildDeploy.yaml` tells us how publishing is handled. By default it should build and deploy each time we create a new release or whenever we manually run our GitHub Action under the ***Actions*** header.
+
+Note, the automatic part did make problems for me initially, and I am not sure why it now works. Something was off with the rules for github page release names under *environments* in *settings*. Well, manually triggering the build and deploy action will work even if the automation does not.
 
 ## Customization and personalization
 
