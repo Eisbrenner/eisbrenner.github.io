@@ -5,7 +5,7 @@
 author:
   name: Ezra Eisbrenner
   image: author.png
-  greeting: "Data Scientist :coffee:"
+  greeting: "Data Scientist & Climate Risk Expert :coffee:"
   icon: ":wave:"
 
 ############################
@@ -64,7 +64,7 @@ links:
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: Ezra Eisbrenner - Data Scientist
+title: Ezra Eisbrenner - Data Scientist & Climate Risk Expert
 description: "Exploring data, science, and society."
 images:
   - thumbnail.png
